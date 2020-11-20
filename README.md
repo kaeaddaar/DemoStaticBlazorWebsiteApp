@@ -1,3 +1,11 @@
+# Implementation of Azure Static Web App using blazor
+This app has API(s) that allow the application to get data dynamically. Instead of using Javascript this application is written in C# for the client side code. The app is developed using razor pages and components in conjunction with API(s) that use Azure Functions for dynamic content.
+
+# Change Log
+* Implement a property bag "CounterState" so the state on the counter is remembered
+
+
+ ----- See Template documentation from original repo below below -----
 # Blazor Starter Application
 
 This template contains an example [Blazor WebAssembly](https://docs.microsoft.com/aspnet/core/blazor/?view=aspnetcore-3.1#blazor-webassembly) client application, a C# [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview) and a C# class library with shared code.
