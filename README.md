@@ -4,7 +4,7 @@ This app has API(s) that allow the application to get data dynamically. Instead 
 # Change Log
 * Implement a property bag "CounterState" so the state on the counter is remembered
 
-
+#
  ----- See Template documentation from original repo below below -----
 # Blazor Starter Application
 
