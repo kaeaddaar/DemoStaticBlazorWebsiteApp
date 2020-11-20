@@ -6,7 +6,9 @@
 
 <p>Current count: @(cnt.CurrentCount)</p>
 
-<button class="btn btn-primary" @onclick="IncrementCount">Click me</button>
+<button class="btn btn-primary" @onclick="IncrementCount">Increment Count</button>
+<br />
+<button class="btn btn-primary" @onclick="ResetCount">Reset Count</button>
 
 @code {
 
@@ -14,5 +16,10 @@
     private void IncrementCount()
     {
         cnt.CurrentCount = cnt.CurrentCount + 1;
+    }
+
+    private void ResetCount()
+    {
+        cnt.CurrentCount = 0;
     }
 }
