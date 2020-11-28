@@ -1,4 +1,6 @@
 ﻿@page "/"
+@inject NavigationManager Navi
+
 
 <h1>Hello @Who</h1>
 
@@ -7,4 +9,9 @@ Welcome to the cmArt Solutions Static Web App.
 @code{
     private string Who = "Everyone";
 
+    protected override Task OnInitializedAsync()
+    {
+        Navi.NavigateTo("/equate");
+        return base.OnInitializedAsync();
+    }
 }
