@@ -4,7 +4,6 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
 using Microsoft.Extensions.DependencyInjection;
 using BlazorApp.Shared;
-using Plk.Blazor.DragDrop;
 
 
 namespace BlazorApp.Client
@@ -19,7 +18,6 @@ namespace BlazorApp.Client
             var baseAddress = builder.Configuration["BaseAddress"] ?? builder.HostEnvironment.BaseAddress;
             builder.Services.AddScoped(_ => new HttpClient { BaseAddress = new Uri(baseAddress) });
             builder.Services.AddSingleton<CounterState>();
-            builder.Services.AddBlazorDragDrop();
 
             await builder.Build().RunAsync();
         }
